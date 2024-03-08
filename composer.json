@@ -1,0 +1,18 @@
+{
+    "name": "luxibay/oxus",
+    "description": "Provides integrative support for WPML when using the Oxygen plugin.",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "Luxibay\\HooklineOxus\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luxibay"
+        }
+    ],
+    "require": {
+        "wptrt/admin-notices": "^1.0"
+    }
+}

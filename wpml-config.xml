@@ -1,0 +1,43 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">ct_template</custom-type>
+    </custom-types>
+    <custom-fields>
+        <custom-field action="translate">ct_builder_json</custom-field>
+        <custom-field action="copy_once">ct_other_template</custom-field>
+        <custom-field action="ignore">ct_builder_shortcodes</custom-field>
+        <custom-field action="copy">ct_page_settings</custom-field>
+        <custom-field action="copy">ct_template_404_page</custom-field>
+        <custom-field action="copy">ct_template_all_archives</custom-field>
+        <custom-field action="copy">ct_template_apply_if_archive_among_authors</custom-field>
+        <custom-field action="copy">ct_template_apply_if_archive_among_cpt</custom-field>
+        <custom-field action="copy">ct_template_apply_if_archive_among_taxonomies</custom-field>
+        <custom-field action="copy">ct_template_apply_if_post_of_parents</custom-field>
+        <custom-field action="copy">ct_template_archive_among_taxonomies</custom-field>
+        <custom-field action="copy">ct_template_archive_post_types</custom-field>
+        <custom-field action="copy">ct_template_archive_post_types_all</custom-field>
+        <custom-field action="copy">ct_template_authors_archives</custom-field>
+        <custom-field action="copy">ct_template_authors_archives_all</custom-field>
+        <custom-field action="copy">ct_template_blog_posts</custom-field>
+        <custom-field action="copy">ct_template_categories</custom-field>
+        <custom-field action="copy">ct_template_categories_all</custom-field>
+        <custom-field action="copy">ct_template_custom_taxonomies</custom-field>
+        <custom-field action="copy">ct_template_custom_taxonomies_all</custom-field>
+        <custom-field action="copy">ct_template_date_archive</custom-field>
+        <custom-field action="copy">ct_template_exclude_ids</custom-field>
+        <custom-field action="copy">ct_template_front_page</custom-field>
+        <custom-field action="copy">ct_template_include_ids</custom-field>
+        <custom-field action="copy">ct_template_index</custom-field>
+        <custom-field action="copy">ct_template_inner_content</custom-field>
+        <custom-field action="copy">ct_template_order</custom-field>
+        <custom-field action="copy">ct_template_post_of_parents</custom-field>
+        <custom-field action="copy">ct_template_post_types</custom-field>
+        <custom-field action="copy">ct_template_search_page</custom-field>
+        <custom-field action="copy">ct_template_single_all</custom-field>
+        <custom-field action="copy">ct_template_tags</custom-field>
+        <custom-field action="copy">ct_template_tags_all</custom-field>
+        <custom-field action="copy">ct_template_taxonomies</custom-field>
+        <custom-field action="copy">ct_template_type</custom-field>
+        <custom-field action="copy">ct_use_template_taxonomies</custom-field>
+    </custom-fields>
+</wpml-config>
