@@ -12,7 +12,7 @@ Text Domain: oxus
 */
 
 define("OXUS_FRAME", plugin_dir_path(__FILE__) . "frame");
-define('OXUS_MAIN',__FILE__)
+define('OXUS_MAIN', __FILE__);
 define('OXUS_PATH', plugin_dir_path(__FILE__));
 define('OXUS_NAME', 'Oxus');
 
