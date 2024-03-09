@@ -9,35 +9,6 @@ class Oxus_Connect
     public function __construct()
     {
 
-
-
-        if (!class_exists('OXUS_Plugin_Updater')) {
-            // load our custom updater
-            include OXUS_FRAME . '/admin/updater/OXUS_Plugin_Updater.php';
-        }
-
-        // To support auto-updates, this needs to run during the wp_version_check cron job for privileged users.
-        $doing_cron = defined('DOING_CRON') && DOING_CRON;
-        if (!current_user_can('manage_options') && !$doing_cron) {
-            return;
-        }
-
-        // retrieve our license key from the DB
-        $license_key = trim(get_option('oxus_license_key'));
-
-        // setup the updater
-        $edd_updater = new OXUS_Plugin_Updater(
-            OXUS_STORE_URL,
-            OXUS_MAIN,
-            array(
-                'version' => OXUS_VERSION,
-                'license' => $license_key,
-                'item_id' => OXUS_ITEM_ID,
-                'author' => 'Luxibay',
-                'beta' => false,
-            )
-        );
-
         $this->oxus_admin_callback();
 
         $this->oxus_dependency_check();
