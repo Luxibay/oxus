@@ -17,13 +17,13 @@ function oxus_modify_wpml_translated(
         // Get the data from the original post
         // We'll then update the data with the translated strings and
         // save to the translated post.
-        $json = get_post_meta($original_post->ID, "ct_builder_json", true);
+        $json = get_post_meta($original_post->ID, "_ct_builder_json", true);
         $tree = json_decode($json, true);
         $tree = oxus_wpml_translated_recursion($tree, $string_translations, $translated_post_id, $lang);
         $json = json_encode($tree, JSON_UNESCAPED_UNICODE);
 
         // Save the post data that now includes the translations to the translated post.
-        update_post_meta($translated_post_id, "ct_builder_json", $json);
+        update_post_meta($translated_post_id, "_ct_builder_json", $json);
     }
 }
 

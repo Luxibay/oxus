@@ -6,7 +6,7 @@ function oxus_wpml_register_strings($post, $package_data)
     remove_action('wpml_page_builder_register_strings', 'oxy_wpml_register_strings');
     if ('Oxygen Builder' === $package_data['kind']) {
         // get JSON
-        $json = get_post_meta($post->ID, "ct_builder_json", true);
+        $json = get_post_meta($post->ID, "_ct_builder_json", true);
         $tree = json_decode($json, true);
 
         oxus_wpml_register_strings_recursion($tree, $package_data);
