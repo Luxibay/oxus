@@ -6,7 +6,7 @@ Plugin URI: https://luxibay.com/plugins/oxus
 Author: Luxibay
 Author URI: https://luxibay.com/
 Description: Provides integrative support for WPML when using the Oxygen plugin.
-Version: 0.8
+Version: 0.9
 Requires Plugins: sitepress-multilingual-cms, oxygen
 Text Domain: oxus
 */
