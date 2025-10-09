@@ -25,3 +25,31 @@ function oxus_cast()
 
     $oxus = new Oxus_Connect();
 }
+
+
+add_action('init', function(){
+	if ( ! class_exists( 'SureCart\Licensing\Client' ) ) {
+		require_once __DIR__ . '/licensing/src/Client.php';
+	}
+	
+	// initialize client with your plugin name and your public token.
+	$client = new \SureCart\Licensing\Client( 'Oxus', 'pt_XKrGiA2xAs23SSkz2Q1k1EJH', __FILE__ );
+	
+	// set your textdomain.
+	$client->set_textdomain( 'oxus' );
+	
+	// add the pre-built license settings page.
+	$client->settings()->add_page( 
+		[
+			'type'                 => 'menu', // Can be: menu, options, submenu.
+			//'parent_slug'          => 'options-general', // add your plugin menu slug.
+			'page_title'           => 'Oxus License',
+			'menu_title'           => 'Oxus License',
+			'capability'           => 'manage_options',
+			'menu_slug'            => $client->slug . '-manage-license',
+			'icon_url'             => '',
+			'position'             => null,
+			'parent_slug'          => '',
+		] 
+	);
+});
