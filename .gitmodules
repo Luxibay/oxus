@@ -1,0 +1,3 @@
+[submodule "wp-content/plugins/oxus/licensing"]
+	path = wp-content/plugins/oxus/licensing
+	url = https://github.com/surecart/wordpress-sdk

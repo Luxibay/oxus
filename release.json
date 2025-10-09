@@ -1,0 +1,14 @@
+{
+  "name": "Oxus",
+  "slug": "oxus",
+  "author": "<a href='https://nauticode.luxibay.com'>Nauticode</a>",
+  "author_profile": "https://nauticode.luxibay.com",
+  "version": "0.9.1",
+  "requires": "6.5",
+  "tested": "6.5",
+  "requires_php": "7.4",
+  "sections": {
+    "description": "Oxus provides integrative support for WPML when using the Classic Oxygen plugin.",
+    "changelog": "<h4>0.9.1 - October 9, 2025</h4><ul><li>Added plugin updater.</li></ul>"
+  }
+}

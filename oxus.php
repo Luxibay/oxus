@@ -2,11 +2,11 @@
 
 /*
 Plugin Name: Oxus
-Plugin URI: https://luxibay.com/plugins/oxus
-Author: Luxibay
-Author URI: https://luxibay.com/
-Description: Provides integrative support for WPML when using the Oxygen plugin.
-Version: 0.9
+Plugin URI: https://nauticode.luxibay.com/oxus
+Author: Nauticode by Luxibay
+Author URI: https://nauticode.luxibay.com/
+Description: Oxus provides integrative support for WPML when using the Classic Oxygen plugin.
+Version: 0.9.1
 Requires Plugins: sitepress-multilingual-cms, oxygen
 Text Domain: oxus
 */
