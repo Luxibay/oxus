@@ -1,0 +1,32 @@
+{
+  "name": "surecart/license-example",
+  "description": "SureCart License Example",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andre Gagnon",
+      "email": "andre@bsf.io"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SureCart\\Licensing\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.3"
+  },
+  "require-dev": {
+    "wp-phpunit/wp-phpunit": "^6.0",
+    "mockery/mockery": "^1.5",
+    "yoast/phpunit-polyfills": "^1.0",
+    "wp-coding-standards/wpcs": "^2.3",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
